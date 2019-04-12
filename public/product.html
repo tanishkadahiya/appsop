@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      background:url('123.jpg') no-repeat center center fixed;
+      background-size:cover;
+    }
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+    table {
+      font-family: arial, sans-serif;
+       align:center;
+      width: 90%;
+      
+    }
+    
+    td, th {
+      border: 2px solid #dddddd;
+      text-align: center;
+      width: 30%;
+      height: 40%;
+     
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    input[type=text] {
+  width: 35%;
+  padding: 6px 6px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;}
+  input[type=number] {
+  width: 35%;
+  padding: 6px 6px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+    </style>
+    
+  <script src="jquery.js"></script>
+  <script src="product.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+  <ul>
+    <li><a  href="index.html">vendor</a></li>
+    <li><a class="active" href="product.html">products</a></li>
+    <li><a href="user.html">users</a></li>
+    
+  </ul>
+    <h1 align="center">Add Product</h1>
+    <div align="center">  
+  <input id="venname" placeholder="vendor name" type="text"><br><br>
+  <input id="proname" placeholder="product name" type="text"><br><br>
+  <input id="pri" placeholder="price" type="number"><br><br>
+  <input id="quant" placeholder="quantity" type="number"><br><br>
+  
+  <button  id="addtask" class="btn btn-success">Add</button></div>
+</div>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+      <table  align="center">
+          <tr><th align="center">Product Name</th>
+            <th align="center">Vendors Name</th><th align="center">Price</th><th align="center">Quantity</th>><th align="center">Delete</th>
+          </tr>
+        </table>
+        <table id="tasklist" align="center">
+            <tr >
+          <td ></td>
+          
+          
+        </tr>
+        </table>
+ 
+</body>
+</html>
